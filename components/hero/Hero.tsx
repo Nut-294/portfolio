@@ -32,21 +32,23 @@ export default function Hero() {
           />
 
           <p className="text-xl text-muted-foreground dark:text-gray-400">
-          I’m a self-taught web developer with a strong passion for creating beautiful and interactive user experiences.
-Even though I didn’t graduate from a computer science background.</p>
+            I’m a self-taught web developer with a strong passion for creating
+            beautiful and interactive user experiences. Even though I didn’t
+            graduate from a computer science background.
+          </p>
 
           <Button
             asChild
             className="bg-green-600 hover:bg-green-700 text-white dark:bg-green-500 dark:hover:bg-green-600"
           >
-            <a href="#projects">View My Work</a>
+            <a href="#projects">View My Project</a>
           </Button>
         </div>
 
         {/* Image Block */}
-        <div className="w-100 h-100 rounded-full overflow-hidden shadow-xl border-4 border-green-300 dark:border-green-500">
+        <div className="w-100 h-100 rounded-full overflow-hidden shadow-xl border-8 border-green-500 dark:border-green-500 transition-transform hover:scale-105 duration-200">
           <img
-            src="/profile.jpg"
+            src="/cat.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
