@@ -5,36 +5,22 @@ import { DarkMode } from "./DarkMode";
 
 export default function Navbar() {
   return (
-    <Menubar className="fixed top-0 z-50 w-full justify-between px-6 py-6 bg-white/80 backdrop-blur-md shadow-md">
+    <Menubar className="fixed top-0 z-50 w-full justify-between px-6 py-8 bg-white/80 dark:bg-background/80 backdrop-blur-md shadow-md border-b border-border">
       <div className="flex gap-6">
-        <MenubarMenu>
-          <MenubarTrigger>
-            <a href="#home">Home</a>
-          </MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger>
-            <a href="#about">About</a>
-          </MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger>
-            <a href="#projects">Projects</a>
-          </MenubarTrigger>
-        </MenubarMenu>
-        <MenubarMenu>
-          <MenubarTrigger>
-            <a href="#contact">Contact</a>
-          </MenubarTrigger>
-        </MenubarMenu>
+        {["home", "about", "projects", "contact"].map((section) => (
+          <MenubarMenu key={section}>
+            <MenubarTrigger className="text-foreground hover:text-green-600 transition-colors">
+              <a href={`#${section}`} className="capitalize">{section}</a>
+            </MenubarTrigger>
+          </MenubarMenu>
+        ))}
       </div>
 
-      
       <div className="hidden md:flex items-center gap-4">
-      <DarkMode/>
+        <DarkMode />
         <a
-          href="/resume.pdf"
-          className="text-sm bg-black text-white px-4 py-2 rounded-md hover:opacity-80 transition"
+          href="/home"
+          className="text-sm bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors"
         >
           Download Resume
         </a>
