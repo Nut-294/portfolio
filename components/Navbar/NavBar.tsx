@@ -1,6 +1,7 @@
 "use client";
 
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
+import { DarkMode } from "./DarkMode";
 
 export default function Navbar() {
   return (
@@ -30,6 +31,7 @@ export default function Navbar() {
 
       
       <div className="hidden md:flex items-center gap-4">
+      <DarkMode/>
         <a
           href="/resume.pdf"
           className="text-sm bg-black text-white px-4 py-2 rounded-md hover:opacity-80 transition"
