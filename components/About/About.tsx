@@ -1,77 +1,86 @@
-// "use client";
-// import { useEffect } from "react";
-// import { TypeAnimation } from "react-type-animation";
-// import { Button } from "@/components/ui/button";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+"use client";
 
-// export default function Hero() {
-//   useEffect(() => {
-//     AOS.init({
-//       duration: 1000,
-//       once: false,
-//     });
-//     AOS.refreshHard();
-//   }, []);
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Image from "next/image";
+import Logo from "../logo/Logo";
+import { LogoItem } from "@/utils/LogoItem";
 
-//   return (
-//     <section
-//       id="home"
-//       className="w-full h-[600px] flex items-center justify-center px-8 bg-muted dark:bg-background"
-//     >
-//       <div className="flex flex-col md:flex-row justify-between items-center gap-8 max-w-5xl w-full">
-//         {/* Text Block */}
-//         <div
-//           className="text-center md:text-left space-y-4 max-w-lg"
-//           data-aos="fade-right"
-  
-//         >
-//           <h1 className="text-5xl font-bold text-foreground dark:text-white">
-//             Hi, I'm Nachlada
-//           </h1>
+const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
-//           <TypeAnimation
-//             sequence={[
-//               "Web Developer 💻",
-//               2000,
-//               "Next.js & React 🚀",
-//               2000,
-//               "TypeScript , JavaScript 🔷",
-//               2000,
-//             ]}
-//             speed={60}
-//             wrapper="span"
-//             repeat={Infinity}
-//             className="text-3xl text-green-600 dark:text-green-400 font-medium"
-//           />
+  return (
+    <section
+      id="about"
+      className="h-[800px] flex flex-col justify-center items-center bg-gray-100 	dark:bg-zinc-900 px-4 transition-colors duration-300"
+    >
+      <div
+        data-aos="fade-up"
+        className=" max-w-6xl p-6 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transition-all duration-300"
+      >
+        <h2 className="text-center text-3xl font-bold text-green-700 dark:text-green-300 mb-4">
+          About Me
+        </h2>
+        <div className="flex flex-col md:flex-row">
+          {/* ฝั่งซ้าย */}
+          <div className="flex-1 px-4 py-4">
+            <p className="text-gray-700 dark:text-gray-300 text-lg">
+              Hello! My name is{" "}
+              <strong className="text-green-700 dark:text-green-300">
+                Nachlada Lengthongcharoen
+              </strong>
+              . I graduated from King Mongkut’s Institute of Technology
+              Ladkrabang (KMITL). I began learning web development on my own
+              during my third year at university, and have continued to improve
+              my skills ever since. I started with the fundamentals of HTML,
+              CSS, and JavaScript, and gradually advanced my skills in
+              <strong className="text-green-700 dark:text-green-300">
+                {" "}
+                TypeScript , Tailwind CSS
+              </strong>{" "}
+              and
+              <strong className="text-green-700 dark:text-green-300">
+                {" "}
+                Next.js
+              </strong>
+              .
+            </p>
+            <br />
+          </div>
 
-//           <p className="text-xl text-muted-foreground dark:text-gray-400">
-//             I’m a self-taught web developer with a strong passion for creating
-//             beautiful and interactive user experiences. Even though I didn’t
-//             graduate from a computer science background.
-//           </p>
+          {/* เส้นคั่น */}
+          <div className="hidden md:block w-px bg-gray-300 dark:bg-gray-600 h-auto"></div>
 
-//           <Button
-//             asChild
-//             className="bg-green-600 hover:bg-green-700 text-white dark:bg-green-500 dark:hover:bg-green-600"
-//           >
-//             <a href="#projects">View My Project</a>
-//           </Button>
-//         </div>
+          {/* ฝั่งขวา */}
+          <div className="flex-1 px-4 flex flex-col justify-center items-center">
+            <Image src="/logo.png" width={150} height={150} alt="logo" />
+            <strong className="mt-4 text-gray-700 dark:text-gray-100 text-xl">
+              Telecommunications and Network Engineering
+            </strong>
+            <p className="text-gray-700 dark:text-gray-300 text-lg">
+              Second Class Honors
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 text-lg">
+              King Mongkut’s Institute of Technology Ladkrabang (KMITL)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-20 text-center">
+        <h3 className="text-2xl font-semibold text-green-700 dark:text-green-300 mb-4">
+          My Skills
+        </h3>
+        <div className="flex flex-wrap gap-10">
+          {LogoItem.map((logo, index) => {
+            return <Logo key={index} src={logo.src} alt={logo.alt} />;
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-//         {/* Image Block */}
-//         <div
-//           className="w-100 h-100 rounded-full overflow-hidden shadow-xl border-8 border-green-500 dark:border-green-500 transition-transform hover:scale-105 duration-200"
-//           data-aos="fade-up"
-    
-//         >
-//           <img
-//             src="/cat.jpg"
-//             alt="Profile"
-//             className="w-full h-full object-cover"
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
+export default About;

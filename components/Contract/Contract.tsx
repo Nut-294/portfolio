@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact" className="h-[1000px]">Contact</section>
+    <section id="contact">Contact</section>
   )
 }
 export default Contact
