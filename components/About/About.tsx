@@ -16,13 +16,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-[900px] flex flex-col justify-center items-center bg-gray-100 	dark:bg-zinc-900 px-4 transition-colors duration-300"
+      className="h-[900px] flex flex-col justify-center items-center bg-gray-50 	dark:bg-zinc-900 px-4 transition-colors duration-300"
     >
       <div
         data-aos="fade-up"
         className=" max-w-6xl p-6 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transition-all duration-300"
       >
-        <h2 className="text-center text-3xl font-bold text-green-700 dark:text-green-300 mb-4">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-green-700 dark:text-green-300 mb-4">
           About Me
         </h2>
         <div className="flex flex-col md:flex-row">
@@ -72,7 +72,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-10 text-center" data-aos="fade-up">
-        <h3 className="text-2xl font-semibold text-green-700 dark:text-green-300 mb-4">
+        <h3 className="text-3xl md:text-4xl font-semibold text-green-700 dark:text-green-300 mb-4">
           My Skills
         </h3>
         <div className="flex flex-wrap gap-10 justify-center">
@@ -86,6 +86,7 @@ const About = () => {
           })}
         </div>
       </div>
+      
     </section>
   );
 };
