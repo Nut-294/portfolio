@@ -60,11 +60,7 @@ export default function Hero() {
         </div>
 
         {/* Image Block */}
-        <div
-          className="w-100 h-100 rounded-full overflow-hidden shadow-xl border-8 border-green-500 dark:border-green-500 transition-transform hover:scale-105 duration-200"
-          data-aos="fade-right"
-          data-aos-delay="300"
-        >
+        <div className="w-sm h-sm rounded-full overflow-hidden shadow-xl border-8 border-green-500 dark:border-green-500 transition-transform duration-300 hover:scale-105 ">
           <img
             src="/cat.jpg"
             alt="Profile"

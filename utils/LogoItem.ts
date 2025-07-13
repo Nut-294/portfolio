@@ -9,9 +9,11 @@ export const LogoItem: LinkLogo[] = [
   { src: "/logoskills/javascript.png", alt: "Javascript" },
   { src: "/logoskills/typescript.png", alt: "Typescript" },
   { src: "/logoskills/python.png", alt: "Python" },
-  { src: "/cat.jpg", alt: "Cat" },
-  { src: "/cat.jpg", alt: "Cat" },
-  { src: "/cat.jpg", alt: "Cat" },
-  { src: "/cat.jpg", alt: "Cat" },
+];
+
+export const ToolItem: LinkLogo[] = [
+  { src: "/logotools/react.png", alt: "React" },
+  { src: "/logotools/next.png", alt: "Next" },
+  { src: "/logotools/django.svg", alt: "Django" },
 
 ];

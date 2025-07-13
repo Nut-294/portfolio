@@ -5,7 +5,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 import Logo from "../logo/Logo";
-import { LogoItem } from "@/utils/LogoItem";
+import { LogoItem, ToolItem } from "@/utils/LogoItem";
+import Tool from "../logo/Tool";
 
 const About = () => {
   useEffect(() => {
@@ -76,6 +77,15 @@ const About = () => {
         <div className="flex flex-wrap gap-10">
           {LogoItem.map((logo, index) => {
             return <Logo key={index} src={logo.src} alt={logo.alt} />;
+          })}
+        </div>
+    
+        <h3 className="mt-4 text-2xl font-semibold text-green-700 dark:text-green-300 mb-4">
+          My Skills
+        </h3>
+        <div className="flex flex-wrap gap-10 mt-4 justify-center">
+          {ToolItem.map((tool, index) => {
+            return <Tool key={index} src={tool.src} alt={tool.alt} />;
           })}
         </div>
       </div>
