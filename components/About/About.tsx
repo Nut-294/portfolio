@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-[800px] flex flex-col justify-center items-center bg-gray-100 	dark:bg-zinc-900 px-4 transition-colors duration-300"
+      className="h-[900px] flex flex-col justify-center items-center bg-gray-100 	dark:bg-zinc-900 px-4 transition-colors duration-300"
     >
       <div
         data-aos="fade-up"
@@ -65,24 +65,21 @@ const About = () => {
               Second Class Honors
             </p>
             <p className="text-gray-700 dark:text-gray-300 text-lg">
-              King Mongkut’s Institute of Technology Ladkrabang (KMITL)
+              King Mongkut’s Institute of Technology Ladkrabang
             </p>
+            <p className="text-gray-700 dark:text-gray-300 text-lg">(KMITL)</p>
           </div>
         </div>
       </div>
-      <div className="mt-20 text-center">
+      <div className="mt-10 text-center" data-aos="fade-up">
         <h3 className="text-2xl font-semibold text-green-700 dark:text-green-300 mb-4">
           My Skills
         </h3>
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-wrap gap-10 justify-center">
           {LogoItem.map((logo, index) => {
             return <Logo key={index} src={logo.src} alt={logo.alt} />;
           })}
         </div>
-    
-        <h3 className="mt-4 text-2xl font-semibold text-green-700 dark:text-green-300 mb-4">
-          My Skills
-        </h3>
         <div className="flex flex-wrap gap-10 mt-4 justify-center">
           {ToolItem.map((tool, index) => {
             return <Tool key={index} src={tool.src} alt={tool.alt} />;

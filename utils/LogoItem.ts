@@ -13,7 +13,11 @@ export const LogoItem: LinkLogo[] = [
 
 export const ToolItem: LinkLogo[] = [
   { src: "/logotools/react.png", alt: "React" },
-  { src: "/logotools/next.png", alt: "Next" },
+  { src: "/logotools/next.png", alt: "Next.js" },
   { src: "/logotools/django.svg", alt: "Django" },
+  { src: "/logotools/node.png", alt: "Node.js" },
+  { src: "/logotools/express.png", alt: "Express" },
+  { src: "/logotools/postgresql.png", alt: "Postgresql" },
+  { src: "/logotools/mongodb.png", alt: "MongoDB" },
 
 ];

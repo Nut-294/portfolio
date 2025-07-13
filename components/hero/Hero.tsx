@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full h-[600px] flex items-center justify-center px-8 bg-gray-200 dark:bg-background"
+      className="w-full h-[700px] flex items-center justify-center px-8 bg-gray-200 dark:bg-background"
     >
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 max-w-5xl w-full">
         {/* Text Block */}
