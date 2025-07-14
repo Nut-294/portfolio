@@ -2,6 +2,7 @@ import About from "@/components/About/About";
 import Certificate from "@/components/certificate/Certificate";
 import Contact from "@/components/Contract/Contract";
 import Hero from "@/components/hero/Hero";
+import Project from "@/components/project/Project";
 
 const page = () => {
   return (
@@ -9,6 +10,7 @@ const page = () => {
       <Hero />
       <About />
       <Certificate/>
+      <Project/>
       <Contact />
     </div>
   );

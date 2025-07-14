@@ -52,7 +52,7 @@ export default function CertificateSection() {
         My Certificates
       </h2>
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {certificates.map((cert) => (
+        {certificates.map((cert,id) => (
           <div
             key={cert.id}
             className="bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-200 dark:border-gray-700"
