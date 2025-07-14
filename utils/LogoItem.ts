@@ -19,5 +19,34 @@ export const ToolItem: LinkLogo[] = [
   { src: "/logotools/express.png", alt: "Express" },
   { src: "/logotools/postgresql.png", alt: "Postgresql" },
   { src: "/logotools/mongodb.png", alt: "MongoDB" },
+];
+
+type Certificate = {
+  title: string;
+  date: string;
+  imageUrl: string;
+};
+
+export const certificates: Certificate[] = [
+  {
+    title: "The Complete 2024 Web Development Bootcamp.",
+    date: "May 2024",
+    imageUrl: "/certificate/web_development.jpg",
+  },
+  {
+    title: " React Real-World Projects.",
+    date: "June 2024",
+    imageUrl: "/certificate/react.jpg",
+  },
+  {
+    title: "The Basic of Typescript",
+    date: "June 2024",
+    imageUrl: "/certificate/typescript.jpg",
+  },
+  {
+    title: "REST API with Django REST Framework.",
+    date: "June 2024",
+    imageUrl: "/certificate/rest_api.jpg",
+  },
 
 ];
