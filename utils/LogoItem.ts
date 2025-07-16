@@ -48,5 +48,37 @@ export const certificates: Certificate[] = [
     date: "June 2024",
     imageUrl: "/certificate/rest_api.jpg",
   },
+];
 
+type Project = {
+  title: string;
+  description: string;
+  imageUrl: string;
+  tags: string[];
+};
+
+export const projects: Project[] = [
+  {
+    title:
+      "Received Signal Strength Computationand Visualization System for Mobile Communication Network",
+    description:
+      "A personal portfolio using Next.js, Tailwind CSS, TypeScript and ShadCN.",
+    imageUrl: "/images/project.jpg",
+
+    tags: ["Typescript","Next.js", "Tailwind", "ShadCN", "Python","Django","Postgresql"],
+  },
+  {
+    title: "Camping",
+    description: "A todo app with MongoDB, authentication and dark mode theme.",
+    imageUrl: "/images/camp.jpg",
+
+    tags: ["Typescript","Next.js", "Tailwind", "ShadCN", "Prisma","Supabase"],
+  },
+  {
+    title: "MonterCat",
+    description: "A todo app with MongoDB, authentication and dark mode theme.",
+    imageUrl: "/images/montercat.jpg",
+
+    tags: ["Javascript","Next.js", "Tailwind"],
+  },
 ];
