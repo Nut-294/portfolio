@@ -1,6 +1,6 @@
 import About from "@/components/About/About";
 import Certificate from "@/components/certificate/Certificate";
-import Contact from "@/components/Contract/Contract";
+import Contact from "@/components/Contract/Contact";
 import Hero from "@/components/hero/Hero";
 import Project from "@/components/project/Project";
 
