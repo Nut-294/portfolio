@@ -62,23 +62,30 @@ export const projects: Project[] = [
     title:
       "Received Signal Strength Computationand Visualization System for Mobile Communication Network",
     description:
-      "A personal portfolio using Next.js, Tailwind CSS, TypeScript and ShadCN.",
+      "A system that calculates and visualizes received signal strength in mobile networks to support analysis, planning, and optimization.",
     imageUrl: "/images/project.jpg",
-
-    tags: ["Typescript","Next.js", "Tailwind", "ShadCN", "Python","Django","Postgresql"],
+    tags: [
+      "Typescript",
+      "Next.js",
+      "Tailwind",
+      "ShadCN",
+      "Python",
+      "Django",
+      "Postgresql",
+    ],
   },
   {
     title: "Camping",
-    description: "A todo app with MongoDB, authentication and dark mode theme.",
+    description: "A booking website that combines accommodations, camping sites, restaurants, and tourist destinations into a single platform to simplify trip planning. ",
     imageUrl: "/images/camp.jpg",
 
-    tags: ["Typescript","Next.js", "Tailwind", "ShadCN", "Prisma","Supabase"],
+    tags: ["Typescript", "Next.js", "Tailwind", "ShadCN", "Prisma", "Supabase"],
   },
   {
     title: "MonterCat",
-    description: "A todo app with MongoDB, authentication and dark mode theme.",
+    description: "A static website built to practice frontend development using HTML, CSS, and modern frameworks like React and Tailwind CSS.",
     imageUrl: "/images/montercat.jpg",
 
-    tags: ["Javascript","Next.js", "Tailwind"],
+    tags: ["Javascript", "Next.js", "Tailwind"],
   },
 ];
