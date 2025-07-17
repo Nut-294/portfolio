@@ -8,7 +8,7 @@ export const LogoItem: LinkLogo[] = [
   { src: "/logoskills/css.png", alt: "Css" },
   { src: "/logoskills/javascript.png", alt: "Javascript" },
   { src: "/logoskills/typescript.png", alt: "Typescript" },
-  { src: "/logoskills/python.png", alt: "Python" },
+  { src: "/logoskills/python.jpg", alt: "Python" },
 ];
 
 export const ToolItem: LinkLogo[] = [
