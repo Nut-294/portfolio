@@ -17,7 +17,7 @@ export default function ProjectSection() {
       id="projects"
       className="w-full px-6 p-4 bg-background text-foreground"
     >
-      <h2 className="text-3xl font-bold text-center text-green-600 dark:text-green-400 mb-5">
+      <h2 className="text-3xl font-bold text-center text-green-600 dark:text-green-400 mb-5 mt-20">
         My Projects
       </h2>
 

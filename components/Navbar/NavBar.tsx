@@ -1,7 +1,6 @@
 "use client";
 
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
-import { DarkMode } from "./DarkMode";
 
 export default function Navbar() {
   return (
@@ -10,21 +9,21 @@ export default function Navbar() {
         {["home", "about", "projects", "contact"].map((section) => (
           <MenubarMenu key={section}>
             <MenubarTrigger className="text-foreground hover:text-green-600 transition-colors">
-              <a href={`#${section}`} className="capitalize">{section}</a>
+              <a href={`#${section}`} className="capitalize">
+                {section}
+              </a>
             </MenubarTrigger>
           </MenubarMenu>
         ))}
       </div>
 
-      <div className="hidden md:flex items-center gap-4">
-        <DarkMode />
-        <a
-          href="/home"
-          className="text-sm bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors"
-        >
-          Download Resume
-        </a>
-      </div>
+      <a
+        href="/Resume_Nachlada.pdf"
+        download="Resume_Nachlada.pdf"
+        className="text-sm bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors"
+      >
+        Download Resume
+      </a>
     </Menubar>
   );
 }
