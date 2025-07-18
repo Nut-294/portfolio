@@ -1,7 +1,7 @@
 "use client";
 
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar";
-
+import { DarkMode } from "./DarkMode";
 export default function Navbar() {
   return (
     <Menubar className="fixed top-0 z-50 w-full justify-between px-6 py-8 bg-white/80 dark:bg-background/80 backdrop-blur-md shadow-md border-b border-border">
@@ -16,7 +16,8 @@ export default function Navbar() {
           </MenubarMenu>
         ))}
       </div>
-
+      <div className="hidden md:flex items-center gap-4">
+      <DarkMode />
       <a
         href="/Resume_Nachlada.pdf"
         download="Resume_Nachlada.pdf"
@@ -24,6 +25,7 @@ export default function Navbar() {
       >
         Download Resume
       </a>
+      </div>
     </Menubar>
   );
 }
