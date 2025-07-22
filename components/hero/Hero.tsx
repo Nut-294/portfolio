@@ -17,12 +17,12 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full h-[700px] flex items-center justify-center px-8 bg-gray-200 dark:bg-background"
+      className="w-full min-h-screen flex items-center justify-center px-8 bg-gray-50 dark:bg-gray-950"
     >
-      <div className="flex flex-col md:flex-row justify-between items-center gap-8 max-w-5xl w-full">
+      <div className="flex flex-col my-8 md:my-0 md:flex-row justify-between items-center gap-8 max-w-5xl w-full">
         {/* Text Block */}
         <div
-          className="text-center md:text-left space-y-4 max-w-lg"
+          className="text-center md:text-left space-y-2 max-w-lg"
           data-aos="fade-right"
           data-aos-delay="300"
         >
@@ -60,9 +60,9 @@ export default function Hero() {
         </div>
 
         {/* Image Block */}
-        <div className="w-sm h-sm rounded-full overflow-hidden shadow-xl border-8 border-green-500 dark:border-green-500 transition-transform duration-300 hover:scale-105 ">
+        <div className="md:w-sm md:h-sm  rounded-full overflow-hidden shadow-xl border-4 border-green-500 dark:border-green-600 transition-transform duration-300 hover:scale-105 ">
           <img
-            src="/cat.jpg"
+            src="/pic.jpg"
             alt="Profile"
             className="w-full h-full object-cover"
           />

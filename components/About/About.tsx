@@ -16,11 +16,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="h-[900px] flex flex-col justify-center items-center bg-gray-50 	dark:bg-zinc-900 px-4 transition-colors duration-300"
+      className="min-h-screen flex flex-col justify-center items-center px-4 transition-colors duration-300 bg-gray-100 dark:bg-gray-800"
     >
       <div
         data-aos="fade-up"
-        className=" max-w-6xl p-6 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transition-all duration-300"
+        className=" max-w-6xl p-6 mt-8 md:mt-20 bg-white dark:bg-zinc-800 rounded-xl shadow-lg transition-all duration-300"
       >
         <h2 className="text-center text-3xl md:text-4xl font-bold text-green-700 dark:text-green-300 mb-4">
           About Me
@@ -28,7 +28,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row">
           {/* ฝั่งซ้าย */}
           <div className="flex-1 px-4 py-4">
-            <p className="text-gray-700 dark:text-gray-300 text-lg">
+            <p className="text-gray-700 dark:text-gray-300 text-lg md:text-left text-center">
               Hello! My name is{" "}
               <strong className="text-green-700 dark:text-green-300">
                 Nachlada Lengthongcharoen
@@ -56,7 +56,7 @@ const About = () => {
           <div className="hidden md:block w-px bg-gray-300 dark:bg-gray-600 h-auto"></div>
 
           {/* ฝั่งขวา */}
-          <div className="flex-1 px-4 flex flex-col justify-center items-center">
+          <div className="flex-1 px-4 flex flex-col justify-center items-center md:text-left text-center">
             <Image src="/logo.png" width={150} height={150} alt="logo" />
             <strong className="mt-4 text-gray-700 dark:text-gray-100 text-xl">
               Telecommunications and Network Engineering
@@ -71,8 +71,14 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 text-center" data-aos="fade-up">
-        <h3 className="text-3xl md:text-4xl font-semibold text-green-700 dark:text-green-300 mb-4">
+      <div
+        className="mt-4 my-8 text-center"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="10"
+        data-aos-offset="0"
+      >
+        <h3 className="text-2xl md:text-3xl font-semibold text-green-700 dark:text-green-300 mb-4">
           My Skills
         </h3>
         <div className="flex flex-wrap gap-10 justify-center">
@@ -86,7 +92,6 @@ const About = () => {
           })}
         </div>
       </div>
-      
     </section>
   );
 };
